@@ -317,8 +317,8 @@ head(gene_row_log2)
 1.  We are very interested in what is going on in the head horns between small males and large males. Using the type of tools you have written (feel free to modify as you need, but show the new functions) calculate the mean expression for the subset of columns for **large and small male head horns**. Note you are calculating means on a gene by gene basis, NOT sample by sample. Now calculate the mean difference (again gene by gene) between large male and small males (for head horns). i.e. first calculate the mean expression among individuals who are large males (head horns), ditto for the small males, and calculate their difference.
 
 ``` r
-large <- rna_counts[, grepl("*_lg_male_hdhorn", names(rna_counts))]
-small <- rna_counts[, grepl("*_sm_male_hdhorn", names(rna_counts))]
+large <- rna_counts[, grepl(".*_lg_male_hdhorn", names(rna_counts))]
+small <- rna_counts[, grepl(".*_sm_male_hdhorn", names(rna_counts))]
 
 mean_large <- mean_row(large)
 mean_large_log2 <- mean_row(large, log2 = TRUE)
