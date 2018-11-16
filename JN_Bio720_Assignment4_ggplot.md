@@ -37,7 +37,7 @@ str(mtcars)
 ```
 
 ```r
-#Plot
+# Plot
 ggplot(mtcars, aes(x = cyl, y = mpg)) +
   geom_point()
 ```
@@ -389,7 +389,7 @@ cyl.am + geom_bar(position = "dodge")
 ![](JN_Bio720_Assignment4_ggplot_files/figure-html/unnamed-chunk-10-3.png)<!-- -->
 
 
-#Overplotting
+# Overplotting
 
 Occurs when:
 1. Large datasets
@@ -422,9 +422,9 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = cyl)) + geom_point(size = 4, shape =
 
 ![](JN_Bio720_Assignment4_ggplot_files/figure-html/unnamed-chunk-11-3.png)<!-- -->
 
-#Geometries
+# Geometries
 
-###Scatter Plots
+### Scatter Plots
 
 
 ```r
@@ -459,7 +459,7 @@ ggplot(mtcars, aes(x = cyl, y = wt)) +
 
 ![](JN_Bio720_Assignment4_ggplot_files/figure-html/unnamed-chunk-12-4.png)<!-- -->
 
-###Histograms
+### Histograms
 
 **The x axis/aesthetic:** The documentation for geom_histogram() states the argument stat = "bin" as a default. Recall that histograms cut up a continuous variable into discrete bins - that's what the stat "bin" is doing. You always get 30 evenly-sized bins by default, which is specified with the default argument binwidth = range/30.
 
@@ -545,7 +545,7 @@ ggplot(mtcars, aes(mpg, col = cyl)) + geom_freqpoly(binwidth = 1)
 
 ![](JN_Bio720_Assignment4_ggplot_files/figure-html/unnamed-chunk-15-2.png)<!-- -->
 
-###Line Plots
+### Line Plots
 
 
 ```r
@@ -580,7 +580,7 @@ ggplot(economics, aes(x = date, y = unemploy/pop)) + geom_line()
 ![](JN_Bio720_Assignment4_ggplot_files/figure-html/unnamed-chunk-16-2.png)<!-- -->
 
 
-###qplot
+### qplot
 
 Shorcut for "quick and dirty"" plots.
 
