@@ -204,7 +204,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = cyl)) + geom_point(size = 4, shape =
 ```
 
 # Geometries
- 
+
 ### Scatter Plots
 
 ```{R}
