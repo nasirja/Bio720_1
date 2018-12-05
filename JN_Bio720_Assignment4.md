@@ -15,7 +15,7 @@ library(reshape)
 ```
 
 # 1. 
-### Notes can be found on [my repo](link).
+### Notes can be found on [my repo](https://github.com/nasirja/Bio720_1/JN_Bio720_Assignment4_Bioconductor.md).
 
 # 2.
 
