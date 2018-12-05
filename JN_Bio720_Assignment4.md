@@ -457,8 +457,7 @@ less_0.05_0 # The proportion of observations with p < 0.05
 ```
 
 
-*Explanation for above*: Given that a slope of 0 is a striaght horizontal line, the y_determistic variable is constant (= intercept = 0.5). This maintains the mean of the normal distribution which is much larger than 0.05, reducing the proportion of p-values < 0.05.
-
+*Explanation for above*: Given that a slope of 0 is a striaght horizontal line, the y_determistic variable is constant (= intercept = 0.5). This maintains the mean of the normal distribution. Given that there is no relationship between x and y (as changing x doesn't impact y), the proportion of p < 0.05 is lower, indicating that the relationship is not as meaningful. There is also no subsequent change in the mean of the normal distribution, limiting the pool that could be sampled since it doesn't change with x.
 
 
 Finally, using either a for loop or an Rish method (i.e. one of the apply family of functions) try a grid of sample sizes from 10 to 100 by 5 (i.e. 10, 15, 20. . . ., 95, 100) with the slope being fixed at 0.1, intercept = 0.5 and residual standard error as 1.5. At each different sample size, run the simulation 100 times and report the frequency at which the p value is less than 0.05. What pattern do you observe. Plotting the proportion of p-values less than 0.05 on the Y axis VS sample size (X axis) may be very helpful
